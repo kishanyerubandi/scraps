@@ -1,0 +1,179 @@
+\documentclass[12pt]{article}
+\usepackage{slashed,amssymb,amsmath,amsthm,comment,setspace,fancyhdr,mathrsfs}
+%\usepackage[pdfstartpage=2,pdfstartview=FitH,bookmarks=false,bookmarksopen=false,pdftex]{hyperref}
+%bookmarksopen=true, bookmarksnumbered=true, pdfpagemode=UseOutlines
+\usepackage[pdftitle={KY Homework},bookmarks=false,bookmarksopen=false,pdfauthor={Kishan Yerubandi},pdftex]{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\usepackage{verbatim}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bse}{\begin{subequations}}
+\newcommand{\ba}{\begin{align}}
+\newcommand{\ea}{\end{align}}
+\newcommand{\ese}{\end{subequations}}
+%\newcommand{\bse}{\begin{subequations}\begin{align}}
+%\newcommand{\ese}{\end{align}\end{subequations}}
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\gam}[3]{\Gamma^{#1}_{#2#3}}
+\newcommand{\prob}{\indent\indent\textbf{\underline{Problem}: }}
+\newcommand{\soln}{\indent\textbf{\underline{Solution}: }}
+\newcommand{\xhat}{\hat{x}}
+\newcommand{\phat}{\hat{p}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\nn}{\mathbb{N}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\hh}{\mathbb{H}}%new!!!!!!!!!!!!!!
+\newcommand{\id}{\text{Id}}
+\renewcommand{\and}{\text{and}}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{~\Rightarrow}
+\newcommand{\jj}{\mathbb{J}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\third}{\frac{1}{3}}
+\newcommand{\muhat}{{\hat{\mu}}}
+\newcommand{\nuhat}{{\hat{\nu}}}
+\newcommand{\sigmahat}{{\hat{\sigma}}}
+\newcommand{\alphahat}{{\hat{\alpha}}}
+\newcommand{\otherwise}{\text{ \ \small otherwise\normalsize}}
+\newcommand{\fourth}{\frac{1}{4}}
+%%%%%%%
+\newcommand{\pQ}{(p\cdot P)}
+\newcommand{\pS}{(p\cdot S)}
+\newcommand{\slp}{\slashed{p}}
+\newcommand{\slQ}{\slashed{P}}
+\newcommand{\slS}{\slashed{S}}
+%\newcommand{\tr}[1]{\text{Tr}(#1)}
+%\newcommand{\tra}{\text{tr}}
+\newcommand{\tra}{\text{T}}
+\newcommand{\tr}{^\text{tr}}
+\newcommand{\gfive}{\gamma_5}
+%%%%%%%%%%%%%%%%%%
+%\newcommand{\utwo}{\sf u(2)}
+%\newcommand{\sutwo}{\sf su(2)}
+\newcommand{\frakg}{\mathfrak{g}}
+\newcommand{\frakh}{\mathfrak{h}}
+\newcommand{\fraku}{\mathfrak{u}}
+\newcommand{\fraksu}{\mathfrak{su}}
+\newcommand{\diag}{\text{diag}}
+%%%%%%%%%%%%%%%%%%%%%%%%%November2011
+\newcommand{\set}[2]{\left\{ #1 \mid  #2 \right\}}
+\newcommand{\inv}{^{-1}}
+\renewcommand{\qed}{$ \ \Box$}
+\newcommand{\GL}{{\sf GL}}
+\newcommand{\SL}{{\sf SL}}
+\renewcommand{\O}{{\sf O}}
+%\renewcommand{\U}{{\sf U}}
+\newcommand{\SO}{{\sf SO}}
+\newcommand{\SU}{{\sf SU}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\lan}{\langle}
+\newcommand{\ran}{\rangle}
+\newcommand{\img}{\text{image}}
+%%%%%
+\newcommand{\gl}{{\sf gl}}
+\renewcommand{\sl}{{\sf sl}}
+\renewcommand{\o}{{\sf o}}
+\newcommand{\so}{{\sf so}}
+\newcommand{\su}{{\sf su}}
+%\newcommand{\u}{{\sf u}}
+\newcommand{\ad}{\text{ad}}
+\newcommand{\Ad}{\text{Ad}}
+\newcommand{\ho}{\text{h.o.}}
+\newcommand{\twe}{\frac{1}{12}}
+\newcommand{\six}{\frac{1}{6}}
+
+\newcommand{\lagr}{\mathcal{L}}
+
+\newcommand{\cala}{\mathcal{A}}
+\newcommand{\calb}{\mathcal{B}}
+\newcommand{\calm}{\mathcal{M}}
+\newcommand{\cm}{\text{cm}}
+\newcommand{\free}{\text{free}}
+
+
+
+
+
+
+
+
+
+
+\newcommand{\ham}{\mathcal{H}}
+\newcommand{\vex}{\vec x}
+\newcommand{\vey}{\vec y}
+
+
+
+
+\usepackage{changepage}%needed for "adjustwidth"
+
+
+%%%%
+\geometry{a4paper, total={210mm,297mm}, left=20mm, right=20mm, top=20mm, bottom=20mm, }
+%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\lhead{PHYS 121}
+\chead{Fall 2018}%Kishan Yerubandi
+\rhead{Test-3}%Math Methods Portfolio
+\lfoot{}
+\cfoot{\thepage}%Page \thepage
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}%\pagenumbering{gobble}%switches off page numbering
+
+
+%\noindent {\bf Full Name }(as appears in school records): \underline{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\
+\noindent {\bf Full Name }(as appears in school records): \underline{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } {\bf Sec}: \underline{ \ \ \ \ \ }\\
+\ \\
+{\bf Instructions}: Show all work and simplify where appropriate; neglecting to do either may result in reduced or no credit being given. No calculators or electronic devices allowed. No books or notes allowed. Use blue or black ink only (no pencils). Each problem counts equally.\\
+\ \\
+{\bf Integrity}: There will be zero tolerance for cheating or academic misconduct of any kind. Keep your eyes on your own paper. Report to the instructor any suspected misconduct by other students.
+
+\ \\ \hrule\hrule\hrule \ \\
+
+%\begin{adjustwidth*}{6em}{6em}
+%\noindent In this document I will very informally record some miscellaneous questions, thoughts, and unsorted remarks that occur to me during my May 2016 (Summer 2016) starting-from-scratch study of quantum field theory.\\
+%\end{adjustwidth*}%i should make this abstract font smaller. it's the same as body (below) font size.
+
+
+%i fixed the ordering of the commands in the definition here, but i need to make the same fix in other documents that use these newcommands. the error was that i really needed \section* (or equivalent) to be the first thing in each definition; otherwise when clicking the hyperlink in the TOC it'd take you to the previous section.
+\newcommand{\sectiontoc}[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+\newcommand{\subsectiontoc}[1]{\subsection*{#1}\addcontentsline{toc}{subsection}{#1}}
+\newcommand{\subsubsectiontoc}[1]{\subsubsection*{#1}\addcontentsline{toc}{subsubsection}{#1}}
+
+\newcounter{kycounter}
+\newcommand{\quesno}{\stepcounter{kycounter}\noindent\thekycounter. }%i put the step/increment first, so that the first time it's used, it prints 1, not 0.
+
+
+
+\quesno A monatomic ideal gas is compressed from 325 m$^3$ to 125 m$^3$ at a constant pressure of 100.0 Pa. What is the change in thermal energy of the gas by the end of the process?
+
+\newpage
+\noindent {\bf Full Name }(as appears in school records): \underline{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } {\bf Sec}: \underline{ \ \ \ \ \ }\\ \ \\
+\quesno Suppose a newborn panda bear of mass 98.0 kg is exhibiting uniform circular motion while orbiting a neutron star of mass $1.50\times10^{21}$ kg and radius $3.50\times10^5$ m. The distance that the bear maintains from the surface of the neutron star is $50.0$ km. What is the magnitude of the baby panda's tangential velocity?
+
+\newpage
+\noindent {\bf Full Name }(as appears in school records): \underline{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ } {\bf Sec}: \underline{ \ \ \ \ \ }\\ \ \\
+\quesno Suppose that a certain refrigerator is observed to remove 23 J of heat from its interior, while drawing 12 J of energy from the electric grid and exhausting 35 J of heat to the kitchen in which it sits. If the food inside the refrigerator is maintained at 2.85$^\circ$C and the room temperature of the kitchen stays at 62.85$^\circ$ C, then at what fraction of this refrigerator's theoretical maximum possible coefficient of performance is its current operating coefficient of performance?
+
+
+
+%$\displaystyle{\lim_{x \to \infty}}$
+
+
+\end{document}
+
+
